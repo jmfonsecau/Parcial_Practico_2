@@ -1,0 +1,22 @@
+<div class="container mt-4">
+    <h2>Restaurantes Internacionales</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>País</th>
+          <th>Tipo de Comida</th>
+          <th>Año de Fundación</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let restaurante of restaurantes">
+          <td>{{ restaurante.name }}</td>
+          <td>{{ restaurante.country }}</td>
+          <td>{{ restaurante.cuisine }}</td>
+          <td>{{ restaurante.opening_year }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

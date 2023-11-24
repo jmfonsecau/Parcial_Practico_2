@@ -1,10 +1,16 @@
-import { Component } from '@angular/core';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent } from './app.component';
+import { RestaurantesComponent } from './restaurantes/restaurantes.component';
 
-@Component({
-  selector: 'app-root', 
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+@NgModule({
+  declarations: [
+    RestaurantesComponent
+  ],
+  imports: [
+    BrowserModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
-export class AppComponent {
-  
-}
+export class AppModule { }

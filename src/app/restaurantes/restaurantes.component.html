@@ -3,3 +3,8 @@
     {{ restaurante.name }} - {{ restaurante.cuisine }}
   </li>
 </ul>
+
+<div *ngIf="restauranteConMayorPuntaje">
+  <p>El restaurante con el mayor puntaje es: {{ restauranteConMayorPuntaje.name }}</p>
+</div>
+
